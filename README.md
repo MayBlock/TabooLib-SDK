@@ -24,7 +24,7 @@ public class Main extends Plugin {
 
 In `Kotlin`
 ```kotlin
-import io.izzel.taboolib.loader.Plugin
+import io.izzel.taboolib.loader.PluginRedefine
 
 @Plugin.Version(5.0)
 class Main : PluginRedefine() {
