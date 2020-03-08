@@ -6,7 +6,7 @@ ext {
     main = 'me.skymc.exmaple'
     author = 'Bkm016'
     version = '1.0-SNAPSHOT'
-    redefine = false // When you use Kotlin as the main class, it must enabled.
+    redefine = false // When you use Kotlin as the main class, it must be enabled.
 }
 ```
 
