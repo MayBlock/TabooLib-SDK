@@ -5,8 +5,8 @@ import io.izzel.taboolib.loader.PluginRedefine
 import io.izzel.taboolib.module.inject.TInject
 import io.izzel.taboolib.module.locale.logger.TLogger
 
-@Plugin.Version(5.18) // The TabooLib dependency version (required)
-class ExamplePlugin : PluginRedefine() {
+@Plugin.Version(5.2) // The TabooLib dependency version (required)
+object ExamplePlugin : PluginRedefine() {
 
     override fun onLoading() {
         // override onLoad()
