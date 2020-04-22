@@ -43,7 +43,7 @@ dependencies {
 
 shadowJar {
     dependencies {
-        include dependency('io.izzel.taboolib:TabooLibLoader:.*')6
+        include dependency('io.izzel.taboolib:TabooLibLoader:.*')
     }
     relocate 'io.izzel.taboolib.loader', project.group + ".boot"
 }
