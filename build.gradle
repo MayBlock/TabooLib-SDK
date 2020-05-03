@@ -5,6 +5,7 @@ plugins {
 }
 
 ext {
+    name = rootProject.name
     main = 'me.skymc.exmaple'
     author = 'Bkm016'
     version = '1.0-SNAPSHOT'
@@ -53,8 +54,8 @@ processResources {
         include 'plugin.yml'
         expand(
                 'name': rootProject.name,
-                'main': rootProject.ext.redefine ? (rootProject.ext.main + ".boot.PluginTransfer") : (rootProject.ext.main + "." + rootProject.name),
-                'mainTransfer': rootProject.ext.redefine ? (rootProject.ext.main + "." + rootProject.name) : "null",
+                'main': rootProject.ext.redefine ? (rootProject.ext.main + ".boot.PluginTransfer") : (rootProject.ext.main + "." + rootProject.ext.name),
+                'mainTransfer': rootProject.ext.redefine ? (rootProject.ext.main + "." + rootProject.ext.name) : "null",
                 'version': rootProject.ext.version,
                 'author': rootProject.ext.author
         )
