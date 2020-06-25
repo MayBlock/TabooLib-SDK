@@ -34,8 +34,8 @@ repositories {
 }
 
 dependencies {
-    compile 'org.spigotmc:spigot:1.15.2-R0.1-20200219.223634-9'
-    compile 'io.izzel.taboolib:TabooLib:5.28:all'
+    compile 'ink.ptms.core:v11600:11600:all'
+    compile 'io.izzel.taboolib:TabooLib:5.3:all'
     compile 'io.izzel.taboolib:TabooLibLoader:2.1:all'
     compile "org.jetbrains.kotlin:kotlin-stdlib:1.2.41"
     compile "org.jetbrains.kotlin:kotlin-stdlib-jdk8:1.2.41"
