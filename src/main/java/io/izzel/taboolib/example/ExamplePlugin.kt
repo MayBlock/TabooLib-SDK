@@ -1,7 +1,6 @@
 package io.izzel.taboolib.example
 
 import io.izzel.taboolib.loader.Plugin
-import io.izzel.taboolib.module.inject.TInject
 
 object ExamplePlugin : Plugin() {
 
