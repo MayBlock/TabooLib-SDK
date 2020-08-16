@@ -1,34 +1,34 @@
 # TabooLib SDK
 
-## Basic information
+## TabooLib Settings
 ```groovy
-ext {
-    main = 'me.skymc.exmaple'
-    author = 'Bkm016'
-    version = '1.0-SNAPSHOT'
-    redefine = false // When you use Kotlin as the main class, it must be enabled.
+taboolib {
+    tabooLibVersion = '5.34'
+    loaderVersion = '2.3'
+    classifier = null
 }
 ```
 
 ### Main class
-In `Java`
-```java
-import io.izzel.taboolib.loader.Plugin
-
-@Plugin.Version(5.0)
-public class Main extends Plugin {
-
-    // ...
-}
-```
-
 In `Kotlin`
 ```kotlin
-import io.izzel.taboolib.loader.PluginRedefine
+@Plugin(depend = 5.34)
+object ExamplePlugin {
 
-@Plugin.Version(5.0)
-class Main : PluginRedefine() {
+    @Plugin.Loading
+    fun onLoad() {
+        // override onLoad()
+    }
 
-    // ...
+    @Plugin.Starting
+    fun onEnable() {
+        // override onEnable()
+    }
+
+    @Plugin.Stopping
+    fun onDisable() {
+        // override onDisable()
+    }
 }
+
 ```
