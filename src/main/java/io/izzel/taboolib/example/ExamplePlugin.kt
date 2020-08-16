@@ -3,21 +3,21 @@ package io.izzel.taboolib.example
 import io.izzel.taboolib.loader.Plugin
 import io.izzel.taboolib.module.inject.TInject
 
-@Plugin(depend = 5.34)
-object ExamplePlugin {
+object ExamplePlugin : Plugin() {
 
-    @Plugin.Loading
-    fun onLoad() {
+    override fun onLoad() {
         // override onLoad()
     }
 
-    @Plugin.Starting
-    fun onEnable() {
+    override fun onEnable() {
         // override onEnable()
     }
 
-    @Plugin.Stopping
-    fun onDisable() {
+    override fun onDisable() {
         // override onDisable()
+    }
+
+    override fun getTabooLibVersion(): Double {
+        return 5.34;
     }
 }
