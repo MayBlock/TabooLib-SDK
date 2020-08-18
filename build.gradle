@@ -11,8 +11,8 @@ sourceCompatibility = '1.8'
 targetCompatibility = '1.8'
 
 taboolib {
-    tabooLibVersion = '5.34'
-    loaderVersion = '2.4'
+    tabooLibVersion = '5.35'
+    loaderVersion = '2.5'
     classifier = null
 }
 
@@ -28,6 +28,6 @@ dependencies {
 
 processResources {
     from(sourceSets.main.resources.srcDirs) {
-        expand name: rootProject.name, main: project.group + ".boot.PluginBoot", version: project.version
+        expand name: rootProject.name, main: project.group + ".boot.PluginBoot", version: project.version, "libVersion": taboolib.tabooLibVersion
     }
 }

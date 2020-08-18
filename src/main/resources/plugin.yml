@@ -8,4 +8,5 @@ main: ${main}
 version: ${version}
 authors: ['坏黑']
 
-api-version: '1.13'
+lib-version: ${libVersion}
+api-version: 1.13

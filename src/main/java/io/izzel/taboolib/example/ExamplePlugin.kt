@@ -15,8 +15,4 @@ object ExamplePlugin : Plugin() {
     override fun onDisable() {
         // override onDisable()
     }
-
-    override fun getTabooLibVersion(): Double {
-        return 5.34;
-    }
 }

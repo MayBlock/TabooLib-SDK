@@ -3,8 +3,8 @@
 ## TabooLib Settings
 ```groovy
 taboolib {
-    tabooLibVersion = '5.34'
-    loaderVersion = '2.4'
+    tabooLibVersion = '5.35'
+    loaderVersion = '2.5'
     classifier = null
 }
 ```
@@ -28,11 +28,6 @@ public class ExamplePlugin extends Plugin {
     public void onDisable() {
         // override onDisable()
     }
-
-    @Override
-    public double getTabooLibVersion() {
-        return 5.34;
-    }
 }
 ```
 
@@ -50,10 +45,6 @@ object ExamplePlugin : Plugin() {
 
     override fun onDisable() {
         // override onDisable()
-    }
-
-    override fun getTabooLibVersion(): Double {
-        return 5.34;
     }
 }
 ```
